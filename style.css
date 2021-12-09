@@ -1,0 +1,165 @@
+/* Base Styles */
+*{
+  box-sizing: border-box;
+  margin: 0;
+}
+
+
+li{
+  font-size: 20px;
+}
+
+p{
+  font-size: 20px;
+  line-height: 2;
+}
+
+/* Containers */
+
+.primary-container{
+  background: url('https://content.r9cdn.net/rimg/dimg/dd/30/25eecbb5-city-5989-174dc0226d1.jpg?width=1200&height=630&crop=true') no-repeat;
+  background-size: 100% 100%;
+  height: 95vh;
+}
+
+.second-container{
+  padding: 45px 75px;
+}
+
+.second-container img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+  border-radius: 20px;
+}
+
+.third-container{
+  padding: 45px 75px;
+}
+
+.footer-container{
+  margin-top: 85px;
+  height: 50px;
+  width: 100%;
+}
+
+/* Page Elements */
+.intro-text{
+  display: none;
+}
+
+.intro-text h1, .intro-text h2{
+  text-shadow: 5px 5px black;
+  font-weight: bolder;
+}
+.intro-text h1{
+  text-align: center;
+  color: red;
+  padding-top: 150px;
+  padding-bottom: 15px;
+  border-bottom: 8px solid yellow;
+}
+
+.intro-text h2{
+  color: green;
+}
+
+.secondText{
+  padding: 10px 20px;
+}
+
+
+.img-2, .img-3{
+  border-radius: 20px;
+}
+.img-2{
+  height: 250px;
+  width: 300px;
+}
+
+.img-3{
+  margin: 10px 20px;
+  height: 350px;
+  width: 400px;
+}
+
+.modal-img{
+  height: 200px;
+  width: 200px;
+}
+
+
+
+.art-fash{
+  display: flex;
+  flex-direction: column;
+}
+
+.cab-container, .cabDiv{
+  display: block;
+}
+
+.cab-container{
+  display: flex;
+  justify-content: center;
+}
+
+
+#hide-1, #cabinet{
+  display: none;
+}
+
+/* Media Queries */
+
+/* Tablet viewport */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+    
+  
+    .primary-container{
+      height: 100vh;
+      width: 100%;
+    }
+    
+    .second-container img{
+      height: 400px;
+      width: 500px;
+    }
+
+    .intro-text h1{
+      text-align: center;
+      color: red;
+      padding-top: 300px;
+      padding-bottom: 15px;
+      border-bottom: 8px solid yellow;
+    }
+
+    .md-p{
+      font-size: 35px;
+    }
+}
+
+/* Smartphone viewport */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+    .primary-container{
+     background: linear-gradient(0.25turn, 	#FF0000, 	#FFFF00, #008000);
+     height: 75vh;
+    }
+    .second-container{
+      padding: 15px 30px; 
+    }
+
+    .second-container img{
+      height: 400px;
+      width: 500px;
+    }
+   
+    
+}
